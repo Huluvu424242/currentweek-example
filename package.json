@@ -12,8 +12,9 @@
   "scripts": {
     "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
     "start": "parcel index.html",
-    "build":"npx parcel build index.html",
-    "lint": "npx standard --fix"
+    "build":"parcel build index.html",
+    "lint": "standard",
+    "format": "standard --fix"
   },
   "repository": {
     "type": "git",
