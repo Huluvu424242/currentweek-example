@@ -1,15 +1,22 @@
-function getWeekNumber(d) {
-// Copy date so don't modify original
-d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
-// Set to nearest Thursday: current date + 4 - current day number
-// Make Sunday's day number 7
-d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay()||7))
-// Get first day of year
-const yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
-// Calculate full weeks to nearest Thursday
-const weekNum = Math.ceil(( ( (d - yearStart) / 86400000) + 1)/7);
-// Return week number
-return weekNum;
+export function getWeekNumber(date = new Date()) {
+  // Copy date so the original remains unchanged
+  const currentDate = new Date(Date.UTC(
+    date.getFullYear(),
+    date.getMonth(),
+    date.getDate()
+  ))
+
+  // Set to nearest Thursday; treat Sunday as day 7
+  currentDate.setUTCDate(
+    currentDate.getUTCDate() + 4 - (currentDate.getUTCDay() || 7)
+  )
+
+  // Calculate the ISO calendar week
+  const yearStart = new Date(Date.UTC(currentDate.getUTCFullYear(), 0, 1))
+
+  return Math.ceil(
+    (((currentDate - yearStart) / 86_400_000) + 1) / 7
+  )
 }
 
-module.exports = (date) => getWeekNumber(date || new Date());
+export default getWeekNumber
