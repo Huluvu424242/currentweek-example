@@ -22,7 +22,7 @@
 ## Usage
 
 ```
- import getWeekNumber from './index.js'
+ import getWeekNumber from '@huluvu424242/theweeknum'
  console.log(weekNum())
 ```
 

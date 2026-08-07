@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "description": "A package that tells you the ISO week number",
   "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
     "start": "parcel index.html",
