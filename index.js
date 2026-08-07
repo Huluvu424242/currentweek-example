@@ -1,4 +1,4 @@
-export function getWeekNumber(date = new Date()) {
+export function getWeekNumber (date = new Date()) {
   // Copy date so the original remains unchanged
   const currentDate = new Date(Date.UTC(
     date.getFullYear(),
