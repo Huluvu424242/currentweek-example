@@ -22,9 +22,8 @@
 ## Usage
 
 ```
-const weekNum = require('@github-craftwork/theweeknum')
-
-console.log(weekNum())
+ import getWeekNumber from './index.js'
+ console.log(weekNum())
 ```
 
 ## Install

@@ -11,7 +11,6 @@ describe('getWeekNumber', () => {
 
   test('returns ISO week 32 for 07.08.2026', () => {
     const date = new Date(2026, 7, 7)
-
     expect(getWeekNumber(date)).toBe(32)
   })
 })
