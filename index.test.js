@@ -14,3 +14,4 @@ describe('getWeekNumber', () => {
     expect(getWeekNumber(date)).toBe(32)
   })
 })
+
