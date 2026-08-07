@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Aktuelle Kalenderwoche</title>
+</head>
+<body>
+    <p id="week-number"></p>
+
+    <script type="module">
+      import getWeekNumber from "./index.js"
+
+      document.getElementById("week-number").textContent =
+        `Aktuelle Kalenderwoche: ${getWeekNumber()}`
+    </script>
+</body>
+</html>
