@@ -29,7 +29,7 @@
 ## Install
 
 ```sh
-npm install @github-craftwork/theweeknum
+npm install @huluvu424242/theweeknum
 ```
 
 ## Run tests
