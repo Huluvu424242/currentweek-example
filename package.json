@@ -1,28 +1,40 @@
 {
-  "name": "@bdougie/theweeknum",
+  "name": "@huluvu424242/theweeknum",
   "version": "0.1.0",
-  "description": "a package that tells you the week number",
-  "main": "index.js",
+  "description": "A package that tells you the ISO week number",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
   "scripts": {
-    "test": "jest"
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
+    "start": "parcel index.html",
+    "build":"parcel build index.html",
+    "lint": "standard",
+    "format": "standard --fix"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bdougie/theWeekNum.git"
   },
-  "author": "bdougie",
+  "author": "huluvu424242",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bdougie/theWeekNum/issues"
   },
   "homepage": "https://github.com/bdougie/theWeekNum#readme",
   "devDependencies": {
-    "jest": "^24.8.0"
-  },
-  "dependencies": {
-    "standard": "^14.3.1"
+    "jest": "^30.4.2",
+    "parcel": "^2.15.4",
+    "standard": "^17.1.2"
   },
   "standard": {
-    "env": [ "jest" ]
+    "env": [
+      "browser",
+      "jest"
+    ]
   }
 }
