@@ -22,15 +22,14 @@
 ## Usage
 
 ```
-const weekNum = require('@github-craftwork/theweeknum')
-
-console.log(weekNum())
+ import getWeekNumber from '@huluvu424242/theweeknum'
+ console.log(weekNum())
 ```
 
 ## Install
 
 ```sh
-npm install @github-craftwork/theweeknum
+npm install @huluvu424242/theweeknum
 ```
 
 ## Run tests
